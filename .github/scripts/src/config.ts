@@ -5,16 +5,18 @@ export const TABLES = [
     interval: "hr",
     query: {
       job_type: "intern",
-      is_usa: true,
+      is_usa: false, // Changed to false to get international positions
+      location_filter: "Canada", // Added location filter for Canada
     },
   },
   {
-    path: "../../../NEW_GRAD_USA.md",
+    path: "../../../NEW_GRAD_USA.md", // Note: This file will now contain Canada positions
     salary: true,
     interval: "yr",
     query: {
       job_type: "new_grad",
-      is_usa: true,
+      is_usa: false, // Changed to false to get international positions
+      location_filter: "Canada", // Added location filter for Canada
     },
   },
   {
@@ -24,6 +26,7 @@ export const TABLES = [
     query: {
       job_type: "intern",
       is_usa: false,
+      location_filter: "Canada", // Added location filter for Canada
     },
   },
   {
@@ -33,6 +36,7 @@ export const TABLES = [
     query: {
       job_type: "new_grad",
       is_usa: false,
+      location_filter: "Canada", // Added location filter for Canada
     },
   },
 ] as const;
